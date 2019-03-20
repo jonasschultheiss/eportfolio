@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Determination Sans;
+  src: url('./DTM-Sans.otf');
+  font-weight: Medium;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+p {
+  font-family: Determination Sans;
+  font-size: 300%;
+  color: white;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+}
