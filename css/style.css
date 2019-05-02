@@ -1,8 +1,10 @@
 @font-face {
-  font-family: hello-alpha;
-  src: url('./helloAlpha.otf');
-  font-weight: Medium;
+  font-family: 'hello_alpharegular';
+  src: url('fonts/hello_alpha-webfont.woff2') format('woff2'),
+    url('fonts/hello_alpha-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
+
 }
 
 body {
@@ -20,7 +22,7 @@ body {
 }
 
 p {
-  font-family: hello-alpha;
+  font-family: hello_alpharegular;
   font-size: 300%;
   color: white;
   -webkit-font-smoothing: none;
