@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Hello Alpha;
+  font-family: hello-alpha;
   src: url('./helloAlpha.otf');
   font-weight: Medium;
   font-style: normal;
@@ -20,9 +20,8 @@ body {
 }
 
 p {
-  font-family: Hello Alpha;
+  font-family: hello-alpha;
   font-size: 300%;
   color: white;
-  font-smooth: never;
   -webkit-font-smoothing: none;
 }
