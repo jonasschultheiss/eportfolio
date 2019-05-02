@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Determination Sans;
-  src: url('./DTM-Sans.otf');
+  font-family: Hello Alpha;
+  src: url('./helloAlpha.otf');
   font-weight: Medium;
   font-style: normal;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 p {
-  font-family: Determination Sans;
+  font-family: Hello Alpha;
   font-size: 300%;
   color: white;
   font-smooth: never;
