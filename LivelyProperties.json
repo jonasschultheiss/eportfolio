@@ -1,0 +1,7 @@
+{
+  "gamertag": {
+    "type": "textbox",
+    "value": "NAME",
+    "text": "Gamertag"
+  }
+}

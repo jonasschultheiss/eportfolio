@@ -1,0 +1,12 @@
+{
+  "AppVersion": "0.1",
+  "Title": "PR1SM Slider",
+  "Thumbnail": "thumb.png",
+  "Preview": "thumb.png",
+  "Desc": "sliding pr1sm",
+  "Author": "quest1onmark",
+  "License": "MIT",
+  "Contact": "https://github.com/prsm/pr1sm-live-wallpaper",
+  "Type": 2,
+  "FileName": "index.html"
+}

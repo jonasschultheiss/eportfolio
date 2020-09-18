@@ -1,29 +1,156 @@
-@font-face {
-  font-family: 'hello_alpharegular';
-  src: url('fonts/hello_alpha-webfont.woff2') format('woff2'),
-    url('fonts/hello_alpha-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+* {
+  user-select: none;
+}
 
+html,
+body {
+  overflow: hidden;
+  background-color: #d0d0d0;
 }
 
 body {
-  text-align: center;
-  background-color: black;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
-.center {
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.dg {
+  opacity: 0.9;
+}
+
+.dg .property-name {
+  overflow: visible;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../assets/font/iconfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/font/Inter.woff2') format('woff2');
+}
+
+.bigFont {
+  font-size: 150%;
+  color: #8c8c8c;
+}
+
+.cr.function.appBigFont {
+  font-size: 150%;
+  line-height: 27px;
+  color: #a5f8d3;
+  background-color: #023c40;
+}
+
+.cr.function.appBigFont .property-name {
+  float: none;
+}
+
+.cr.function.appBigFont .icon {
+  position: sticky;
+  bottom: 27px;
+}
+
+.icon {
+  font-family: 'iconfont';
+  font-size: 130%;
+  float: right;
+}
+
+.twitter:before {
+  content: 'a';
+}
+
+.github:before {
+  content: 'b';
+}
+
+.app:before {
+  content: 'c';
+}
+
+.discord:before {
+  content: 'd';
+}
+
+.pr1sm {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  font-size: xx-large;
+  padding-top: 2rem;
+  /* mix-blend-mode: difference; */
 }
 
-p {
-  font-family: hello_alpharegular;
-  font-size: 300%;
-  color: white;
-  -webkit-font-smoothing: none;
+.logo {
+  position: absolute;
+  z-index: 10;
+  max-width: 48rem;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.7));
+  /* mix-blend-mode: exclusion; */
+}
+
+.logofont {
+  margin-bottom: -0.6rem;
+  height: 5rem;
+  color: #333333;
+  fill: currentColor;
+}
+
+.gamertag-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.gamertag {
+  font-family: Inter, sans-serif;
+  letter-spacing: 0.025em;
+  font-weight: 900;
+  font-size: 5rem;
+  color: #333333;
+  width: fit-content;
+  display: inline-block;
+}
+
+.scrolling {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling > div {
+  animation: marquee 150s linear infinite;
+  display: inline-block;
+  width: fit-content;
+}
+
+.reverse > div {
+  animation-direction: reverse;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
